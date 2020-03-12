@@ -18,16 +18,15 @@ public:
 ```c++
 class Solution {
 public:
-    int Fibonacci(int n) {
-        if (n==0 || n==1) 
-            return n;
-        int a = 1;
-        int b = 0;
-        int result = 0;
-        for (int i =0; i<n-1; i++) {
-            result = a+b;
-            b = a;
-            a = result;
+    int fib(int n) {
+        if (n==0 || n==1) return n;
+        int a = 0;
+        int b = 1;
+        int result;
+        for (int i=0; i<n-1; i++){
+            result = (a+b) % 1000000007;
+            a = b;
+            b = result;
         }
         return result;
     }
