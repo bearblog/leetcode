@@ -18,7 +18,7 @@
 ## 算法思想
 
 - 双指针
-- [排序]([https://github.com/bearblog/leetcode/blob/master/leetcode_solution/912.%20sort-an-array/solution.md](https://github.com/bearblog/leetcode/blob/master/leetcode_solution/912. sort-an-array/solution.md))
+- [排序](https://github.com/bearblog/leetcode/blob/master/leetcode_solution/912.%20sort-an-array/solution.md)
 - 贪心
 - 二分查找
 - 分治
