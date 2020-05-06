@@ -5,7 +5,7 @@ class Solution {
 public:
     int lengthOfLIS(vector<int>& nums) {
         int n = nums.size();
-        if (n==0) return 0;
+        if (n《2) return n;
         vector<int> dp(n, 0);
         dp[0] = 1;
         int res = 1;
@@ -21,4 +21,6 @@ public:
     }
 };
 ```
+
+
 

@@ -4,19 +4,21 @@
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
-        if (s.size() == 0) return 0;
+        int n = s.size();
+        if (n<2) return n;
         unordered_set<char> lookup;
-        int maxStr = 0;
+        lookup.insert(s[0]);
+        int res = 1;
         int left = 0;
-        for (int i=0; i<s.size(); i++) {
+        for (int i = 1; i < n; i++) {
             while (lookup.find(s[i]) != lookup.end()) {
                 lookup.erase(s[left]);
                 left++;
             }
-            maxStr = max(maxStr, i-left+1);
+            res = max(res, i-left+1);
             lookup.insert(s[i]);
         }
-        return maxStr;
+        return res;
     }
 };
 ```
