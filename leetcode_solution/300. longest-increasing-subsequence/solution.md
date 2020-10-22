@@ -5,7 +5,7 @@ class Solution {
 public:
     int lengthOfLIS(vector<int>& nums) {
         int n = nums.size();
-        if (n《2) return n;
+        if (n<2) return n;
         vector<int> dp(n, 0);
         dp[0] = 1;
         int res = 1;
@@ -24,3 +24,4 @@ public:
 
 
 
+贪心+二分会使计算复杂度降到

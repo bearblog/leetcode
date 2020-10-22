@@ -1,3 +1,7 @@
+题目：https://leetcode-cn.com/problems/top-k-frequent-elements/
+
+优先队列-小顶堆
+
 
 
 ```c++
@@ -22,7 +26,7 @@ public:
             res.push_back(heap.top().second);
             heap.pop();
          }
-
+		 reverse(res.begin(), res.end());
          return res;
     }
 };
